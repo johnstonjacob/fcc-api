@@ -26,6 +26,7 @@ const requestHandler = function(req, res) {
         const endpoint = url.split("/")[1]
         if (endpoint === 'timestamp') modules.ts.timestamp(req, res, generateResponse);
         else if (endpoint === 'headerparser') modules.hp.headerParser(req, res, generateResponse);
+        else if(endpoint === 'urlshortener') modules.us.urlShortener(req, res, generateResponse);
         else pageNotFound();
     }
 

@@ -1,4 +1,4 @@
-const url = require("url");
+const url = require('url');
 
 const timestamp = function(req, res, callback) {
     let data, natural;
